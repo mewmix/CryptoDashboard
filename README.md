@@ -1,16 +1,27 @@
 # CryptoDashboard
-Conky dashboard inspied by https://github.com/Gictorbit/victorconky 
+Conky dashboard inspired by https://github.com/Gictorbit/victorconky 
 
 
 #Install Steps
 
 1.Clone this Repo 
 
-Copy the CryptoDashboard folder to this path
+```
+
+git clone https://github.com/mewmix/CryptoDashboard
 
 ```
-~/.conky 
+
+Move the CryptoDashboard folder to your conky path 
+
+```
+mv CryptoDashboard ~/.conky 
 ```
 
 2.Edit the sample .env file with your etherscan key and rename as .env
+
+```
+cp sample.env .env
+
+```
 
