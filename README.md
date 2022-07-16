@@ -1,0 +1,2 @@
+# CryptoDashboard
+Conky dashboard 
