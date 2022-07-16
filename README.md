@@ -1,5 +1,6 @@
 # CryptoDashboard
-Conky dashboard inspired by https://github.com/Gictorbit/victorconky 
+Conky dashboard inspired by https://github.com/Gictorbit/victorconky - depends on Python 3 - untested with Python2 -
+Also depends on an Etherscan API Key - for more information on obtaining one see here https://info.etherscan.com/etherscan-developer-api-key/
 
 
 #Install Steps
@@ -25,3 +26,9 @@ cp sample.env .env
 
 ```
 
+3.Make start script executable and run
+
+```
+chmod +x start.sh  && ./start.sh
+
+```
