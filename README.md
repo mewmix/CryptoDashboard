@@ -1,5 +1,5 @@
 # CryptoDashboard
-Conky dashboard 
+Conky dashboard inspied by https://github.com/Gictorbit/victorconky 
 
 
 #Install Steps
