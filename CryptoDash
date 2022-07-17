@@ -30,7 +30,10 @@ color1 ffffff
 color2 AA4A44
 color3 880808
 color4 f2a900
-color5 215CAF
+color5 FF7F50
+color6 0096FF
+color7 FFDF00
+
 own_window_argb_visual yes
 own_window_colour 000000
 own_window_argb_value 0
@@ -40,8 +43,15 @@ ${goto 100}
 ${goto 100}${color1}${font Droid Sans:style=bold:size=30}${time %H:%M}
 
 
-${font}${goto 10} $color4 Bitcoin$color1:  $color0$$ $color1 ${execi 30 python3 btc-usd.py}  
-${font}${goto 10} $color5 Ethereum$color1: $color0$$ $color1 ${execi 30 python3 eth-usd.py}  
+${font}${goto 10} $color4 Bitcoin$color1:  $color0$$ $color1 ${execi 120 python3 btc-usd.py}  
+${font}${goto 10} $color6 Ethereum$color1: $color0$$ $color1 ${execi 120 python3 eth-usd.py} 
+${font}${goto 10} $color7 WAX$color1: $color0$$ $color1 ${execi 120 python3 wax-usd.py}  
+${font}${goto 10} $color7 EOS$color1: $color0$$ $color1 ${execi 120 python3 eos-usd.py}  
+
+
+
+${font}${goto 10}Price per KB: $color7 ${execi 120 python3 wax-tables.py} $color1 WAX
+${font}${goto 10}Price per KB: $color1 ${execi 120 python3 eos-tables.py} $color1 EOS
 
 
 
@@ -53,7 +63,7 @@ ${font}${goto 10} Safe Gas Price: ${color0} ${execi 120 python3 SafetGas.py} $co
 ${alignc}${color0}${DESKTOP_SESSION}${font}
 ${voffset 6}${alignc}${color0}${time %b %d, %Y}${font}${color}
 ${voffset 18}${goto 12}${color5}CPU${goto 50}
-${goto 12}$cpu%
+$color0 ${goto 12}$cpu%
 ${color0}${goto 12}${cpubar 8,254}
 ${voffset 5}${goto 12}$font${color1}${top name 1}$alignr$color${top cpu 1}%
 ${goto 12}${color1}${top name 2}$alignr$color${top cpu 2}%
