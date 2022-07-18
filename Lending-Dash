@@ -16,9 +16,9 @@ own_window yes
 own_window_type desktop
 own_window_transparent yes
 own_window_hints undecorated,sticky,skip_taskbar,skip_pager
-alignment top_left
+alignment bottom_left
 gap_x 0
-gap_y 30
+gap_y 100
 minimum_size 280 0
 default_bar_size 30 8
 draw_shades no
@@ -53,4 +53,4 @@ color8 0096FF
 TEXT
 
 
-$color1 ${execi 30 python3 trader-joe.py} $color7 WAX
+$color1 ${font Droid Sans:size=8} ${execi 30 python3 top_us_news.py} 

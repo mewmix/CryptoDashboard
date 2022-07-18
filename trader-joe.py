@@ -31,8 +31,8 @@ for i in dict:
   print(f"There are {total} accounts near liquidation on Trader Joe based on our filters")
   if total > 0:
     print(f"Printing the first 2 results of {total}")
-    print(all[0]["id"], all[0]["health"], all[0]["totalBorrowValueInUSD"], all[0]["totalCollateralValueInUSD"])
-    print(all[1]["id"], all[1]["health"], all[1]["totalBorrowValueInUSD"], all[1]["totalCollateralValueInUSD"])
+    print(all[0]["id"], all[0]["health"], all[0]["totalBorrowValueInUSD"])
+    print(all[1]["id"], all[1]["health"], all[1]["totalBorrowValueInUSD"])
         
   if total < 0:
     print("No results to display")
