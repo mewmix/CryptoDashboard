@@ -10,7 +10,6 @@ imlib_cache_size 0
 double_buffer yes
 no_buffers yes
 use_xft yes
-xftfont Droid Sans:size=9
 override_utf8_locale yes
 text_buffer_size 2048
 own_window yes
@@ -54,6 +53,9 @@ $color1 ${font}${goto 10}Price per KB: $color1 ${execi 120 python3 eos-tables.py
 
 $color1${font}${goto 10} Fast Gas Price: $color2 ${execi 120 python3 FastGas.py} $color1 GWEI
 ${font}${goto 10} Safe Gas Price: ${color0} ${execi 120 python3 SafetGas.py} $color1 GWEI
+
+
+
 
 ${alignc}${color0}${DESKTOP_SESSION}${font}
 ${voffset 6}${alignc}${color0}${time %b %d, %Y}${font}${color}
