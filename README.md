@@ -35,5 +35,4 @@ chmod +x start.sh  && ./start.sh
 
 4. Screenshots
 
-![Dashboard](https://user-images.githubusercontent.com/42463809/179366773-80e121ea-d232-40d8-ae29-df4804ac0b66.png)
 ![ConkerGUI](https://user-images.githubusercontent.com/42463809/179452037-8c82a9a4-c733-400e-91bd-6b7075e49a18.png)
