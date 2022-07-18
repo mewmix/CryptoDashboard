@@ -24,15 +24,16 @@ default_bar_size 30 8
 draw_shades no
 default_color ffffff
 default_shade_color 000000
-color0 32CD32
+color0 cd90f5
 color1 ffffff
-color2 AA4A44
+color2 f56969
 color3 880808
 color4 f2a900
-color5 FF7F50
+color5 cbf7f4
 color6 0096FF
 color7 FFDF00
 color8 0096FF
+color9 9ffcaa
 
 own_window_argb_visual yes
 own_window_colour 000000
@@ -41,36 +42,36 @@ own_window_argb_value 0
 TEXT
 ${goto 100}
 ${goto 100}${color1}${font Droid Sans:style=bold:size=30}${time %H:%M}
-${font}${goto 10} $color4 Bitcoin$color1:  $color0$$ $color1 ${execi 120 python3 btc-usd.py}  
-${font}${goto 10} $color6 Ethereum$color1: $color0$$ $color1 ${execi 120 python3 eth-usd.py} 
-${font}${goto 10} $color7 WAX$color1: $color0$$ $color1 ${execi 120 python3 wax-usd.py}  
-${font}${goto 10} $color5 EOS$color1: $color0$$ $color1 ${execi 120 python3 eos-usd.py}  
+${font}${goto 10} $color4 Bitcoin$color1:  $color9$$ $color1 ${execi 120 python3 btc-usd.py}  
+${font}${goto 10} $color6 Ethereum$color1: $color9$$ $color1 ${execi 120 python3 eth-usd.py} 
+${font}${goto 10} $color7 WAX$color1: $color9$$ $color1 ${execi 120 python3 wax-usd.py}  
+${font}${goto 10} $color5 EOS$color1: $color9$$ $color1 ${execi 120 python3 eos-usd.py}  
 
 
 ${font}${goto 10}Price per KB: $color1 ${execi 120 python3 wax-tables.py} $color7 WAX
-$color1 ${font}${goto 10}Price per KB: $color1 ${execi 120 python3 eos-tables.py} $color5 EOS
+$color ${font}${goto 10}Price per KB: $color1 ${execi 120 python3 eos-tables.py} $color5 EOS
 
 
-$color1${font}${goto 10} Fast Gas Price: $color2 ${execi 120 python3 FastGas.py} $color1 GWEI
-${font}${goto 10} Safe Gas Price: ${color0} ${execi 120 python3 SafetGas.py} $color1 GWEI
+$color1${font}${goto 10} Fast Gas Price: $color2 ${execi 120 python3 FastGas.py} $color6 GWEI
+$color${font}${goto 10} Safe Gas Price: ${color0} ${execi 120 python3 SafetGas.py} $color6 GWEI
 
 
 
 
-${alignc}${color0}${DESKTOP_SESSION}${font}
-${voffset 6}${alignc}${color0}${time %b %d, %Y}${font}${color}
-${voffset 18}${goto 12}${color5}CPU${goto 50}
-$color0 ${goto 12}$cpu%
+${alignc}${color9}${DESKTOP_SESSION}${font}
+${voffset 6}${alignc}${color9}${time %b %d, %Y}${font}${color}
+${voffset 18}${goto 12}${color9}CPU${goto 50}
+$color9 ${goto 12}$cpu%
 ${color0}${goto 12}${cpubar 8,254}
-${voffset 5}${goto 12}$font${color1}${top name 1}$alignr$color${top cpu 1}%
+${voffset 5}${goto 12}$font${color1}${top name 1}$alignr$color1${top cpu 1}%
 ${goto 12}${color1}${top name 2}$alignr$color${top cpu 2}%
 ${goto 12}${color1}${top name 3}$alignr$color${top cpu 3}%
-${voffset 14}${goto 12}${color6}RAM${goto 50}
-${goto 12}$mem/$memmax
+${voffset 14}${goto 12}${color9}RAM${goto 50}
+${goto 12}$mem/$color0$memmax
 ${color0}${goto 12}${membar 8,254}${color}
-${goto 12}${voffset 5}${color1}${top_mem name 1}$alignr$color${top_mem mem_res 1}
-${goto 12}${color1}${top_mem name 2}$alignr$color${top_mem mem_res 2}
-${goto 12}${color1}${top_mem name 3}$alignr$color${top_mem mem_res 3}
-${goto 12}${voffset 14}${color5}${font}File System 
-${goto 12}${color0}${fs_used /}/${fs_size /} 
+${goto 12}${voffset 5}${color5}${top_mem name 1}$alignr$color${top_mem mem_res 1}
+${goto 12}${color5}${top_mem name 2}$alignr$color${top_mem mem_res 2}
+${goto 12}${color5}${top_mem name 3}$alignr$color${top_mem mem_res 3}
+${goto 12}${voffset 14}${color9}${font}File System 
+${goto 12}${color9}${fs_used /}/$color0${fs_size /} 
 ${goto 12}${color0}${fs_bar 6 /}
