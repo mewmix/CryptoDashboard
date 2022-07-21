@@ -52,5 +52,6 @@ color8 0096FF
 #
 TEXT
 
+$color1${font Droid Sans:size=8}${execi 30 python3 yearn.py} 
 
 $color1 ${font Droid Sans:size=8} ${execi 30 python3 top_us_news.py} 

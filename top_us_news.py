@@ -10,5 +10,5 @@ random_number = random.randint(1, count)
 # Get the random news story
 random_story = us_news[random_number] 
 # Print the random story
-print(f"Story# {random_number} of {count} -  {random_story['title']}")
-print(random_story['description'])
+print(f"Story# {random_number} of {count} -  {random_story['description']}")
+print(f"Link: {random_story['link']}")
