@@ -35,13 +35,15 @@ color7 FFDF00
 color8 0096FF
 color9 9ffcaa
 
+font "DejaVu Sans Mono:size=10"
+
 own_window_argb_visual yes
 own_window_colour 000000
 own_window_argb_value 0
 
 TEXT
 ${goto 100}
-${goto 100}${color1}${font Droid Sans:style=bold:size=30}${time %H:%M}
+${goto 100}${color5}${font style=bold:size=30}${time %H:%M}
 ${font}${goto 10} $color4 Bitcoin$color1:  $color9$$ $color1 ${execi 120 python3 btc-usd.py}  
 ${font}${goto 10} $color6 Ethereum$color1: $color9$$ $color1 ${execi 120 python3 eth-usd.py} 
 ${font}${goto 10} $color7 WAX$color1: $color9$$ $color1 ${execi 120 python3 wax-usd.py}  

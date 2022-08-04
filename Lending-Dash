@@ -49,9 +49,12 @@ color6 0096FF
 color7 FFDF00
 color8 0096FF
 
+font "DejaVu Sans Mono:size=10"
+
+
 #
 TEXT
 
-$color1${font Droid Sans:size=8}${execi 30 python3 yearn.py} 
+$color4${font :size=8}${execi 30 python3 yearn.py} 
 
-$color1 ${font Droid Sans:size=8} ${execi 30 python3 top_us_news.py} 
+$color7 ${font :size=8} ${execi 30 python3 top_us_news.py} 
